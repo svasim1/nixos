@@ -5,8 +5,5 @@
     curl
     git
     gh
-    vscodium
-    vscodium-fhs
-    opencode
   ];
 }

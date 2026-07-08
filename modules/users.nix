@@ -4,4 +4,9 @@
     description = "Svante";
     extraGroups = [ "wheel" "networkmanager" ];
   };
+
+  services.displayManager.autoLogin = {
+    enable = true;
+    user = "svante";
+  };
 }

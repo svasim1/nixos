@@ -3,6 +3,7 @@
     ./hardware-configuration.nix
     ./modules/boot.nix
     ./modules/desktop.nix
+    ./modules/gc.nix
     ./modules/networking.nix
     ./modules/locale.nix
     ./modules/packages.nix
