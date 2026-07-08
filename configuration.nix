@@ -10,6 +10,12 @@
       ./hardware-configuration.nix
     ];
 
+  # Plasma
+  services = {
+    desktopManager.plasma6.enable = true;
+    displayManager.plasma-login-manager.enable = true;
+  };
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -80,6 +86,7 @@
     git
     gh
     sbctl
+    vscodium
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
