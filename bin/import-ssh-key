@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SSH_DIR="$HOME/.ssh"
+KEY_FILE="$SSH_DIR/id_ed25519"
+PUB_FILE="$SSH_DIR/id_ed25519.pub"
+
+echo "Paste your PRIVATE key (including BEGIN and END lines), then press Ctrl+D:"
+mkdir -p "$SSH_DIR"
+cat > "$KEY_FILE"
+chmod 600 "$KEY_FILE"
+
+echo "Paste your PUBLIC key (the .pub file), then press Ctrl+D:"
+cat > "$PUB_FILE"
+chmod 644 "$PUB_FILE"
+
+echo "SSH key imported to $SSH_DIR"
