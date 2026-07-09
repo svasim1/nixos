@@ -14,6 +14,7 @@
       alacritty
       vscodium-fhs
       opencode
+      fastfetch
     ];
   };
 }
