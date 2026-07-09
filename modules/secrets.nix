@@ -1,5 +1,5 @@
-{ ... }: {
-  age.identityPaths = [ "/home/svante/.ssh/id_ed25519" ];
+{ config, ... }: {
+  age.identityPaths = [ "/home/svante/.config/agenix/key" ];
 
   age.secrets."id_ed25519" = {
     file = ../secrets/id_ed25519.age;
