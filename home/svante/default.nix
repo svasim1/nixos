@@ -3,6 +3,7 @@
     ./firefox
     ./plasma
     ./vesktop
+    ./ssh
   ];
 
   home = {

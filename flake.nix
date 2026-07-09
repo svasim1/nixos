@@ -19,9 +19,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, home-manager, plasma-manager, ... }: {
+  outputs = { self, nixpkgs, lanzaboote, home-manager, plasma-manager, agenix, ... }: {
     nixosConfigurations = {
       svante-nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -30,6 +35,7 @@
           ./configuration.nix
           lanzaboote.nixosModules.lanzaboote
           home-manager.nixosModules.home-manager
+          agenix.nixosModules.default
           {
             home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
           }

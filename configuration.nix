@@ -7,6 +7,7 @@
     ./modules/networking.nix
     ./modules/locale.nix
     ./modules/packages.nix
+    ./modules/secrets.nix
     ./modules/users.nix
     ./modules/home-manager.nix
   ];
