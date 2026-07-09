@@ -10,7 +10,32 @@
 
     kwin.effects.shakeCursor.enable = false;
 
+    panels = [
+      {
+        location = "bottom";
+        height = 44;
+        widgets = [
+          "org.kde.plasma.kickoff"
+          "org.kde.plasma.pager"
+          {
+            iconTasks = {
+              launchers = [
+                "applications:codium.desktop"
+                "applications:vesktop.desktop"
+                "applications:spotify.desktop"
+              ];
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.systemtray"
+          "org.kde.plasma.digitalclock"
+          "org.kde.plasma.showdesktop"
+        ];
+      }
+    ];
+
     configFile = {
+      "ksmserverrc"."General"."loginMode" = "emptySession";
       "kdeglobals"."General"."TerminalApplication" = "alacritty";
       "kdeglobals"."General"."TerminalService" = "Alacritty.desktop";
       "kdeglobals"."KDE"."AnimationDurationFactor" = "0.5";
