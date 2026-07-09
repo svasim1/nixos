@@ -14,6 +14,7 @@
       "kdeglobals"."General"."TerminalApplication" = "alacritty";
       "kdeglobals"."General"."TerminalService" = "Alacritty.desktop";
       "kdeglobals"."KDE"."AnimationDurationFactor" = "0.5";
+      "plasma-localerc"."Formats"."LC_TIME" = "sv_SE.UTF-8";
       "plasma-localerc"."Formats"."TimeFormat" = "HH:mm:ss";
       "powerdevilrc"."AC"."TurnOffDisplayAfterIdleSec" = "1800";
       "powerdevilrc"."AC"."SuspendSessionAfterIdleSec" = "0";
