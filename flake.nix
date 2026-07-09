@@ -27,20 +27,8 @@
   };
 
   outputs = { self, nixpkgs, lanzaboote, home-manager, plasma-manager, agenix, ... }: {
-    nixosConfigurations = {
-      svante-nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-
-        modules = [
-          ./configuration.nix
-          lanzaboote.nixosModules.lanzaboote
-          home-manager.nixosModules.home-manager
-          agenix.nixosModules.default
-          {
-            home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
-          }
-        ];
-      };
+    nixosConfigurations = import ./hosts {
+      inherit nixpkgs lanzaboote home-manager agenix plasma-manager;
     };
   };
 }

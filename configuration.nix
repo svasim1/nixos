@@ -1,6 +1,5 @@
 { ... }: {
   imports = [
-    ./hardware-configuration.nix
     ./modules/boot.nix
     ./modules/desktop.nix
     ./modules/gc.nix
