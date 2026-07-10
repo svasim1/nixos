@@ -15,6 +15,8 @@
   home-manager.users.svante.gtk = {
     enable = true;
 
+    gtk2.force = true;
+
     theme = {
       name = "Breeze-Dark";
       package = pkgs.kdePackages.breeze-gtk;
