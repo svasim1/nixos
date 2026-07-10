@@ -4,13 +4,6 @@
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
       lazy-nvim
-      nvim-cmp
-      cmp-nvim-lsp
-      luasnip
-      cmp_luasnip
-      nvim-treesitter
-      telescope-nvim
-      plenary-nvim
     ];
     extraLuaConfig = ''
       vim.o.number = true
