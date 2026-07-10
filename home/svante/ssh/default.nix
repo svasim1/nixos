@@ -3,17 +3,15 @@
     enable = true;
     enableDefaultConfig = false;
     settings = {
-      "*".identityFile = "~/.ssh/id_ed25519";
-    };
-    matchBlocks = {
+      "*".IdentityFile = "~/.ssh/id_ed25519";
       "ananas.h.krlsg.se ananas" = {
-        hostname = "ananas.h.krlsg.se";
-        user = "svante";
+        HostName = "ananas.h.krlsg.se";
+        User = "svante";
       };
       "papaya.h.krlsg.se papaya" = {
-        hostname = "emma-server";
-        user = "svante";
-        proxyJump = "ananas";
+        HostName = "emma-server";
+        User = "svante";
+        ProxyJump = "ananas";
       };
     };
   };
