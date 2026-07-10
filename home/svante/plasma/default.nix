@@ -6,6 +6,8 @@
       lookAndFeel = "org.kde.breezedark.desktop";
       colorScheme = "BreezeDark";
       iconTheme = "breeze-dark";
+      wallpaper = ./wallpaper.jpg;
+      wallpaperFillMode = "preserveAspectCrop";
     };
 
     kwin.effects.shakeCursor.enable = false;
@@ -23,6 +25,7 @@
                 "applications:codium.desktop"
                 "applications:vesktop.desktop"
                 "applications:spotify.desktop"
+                "applications:firefox.desktop"
               ];
             };
           }
