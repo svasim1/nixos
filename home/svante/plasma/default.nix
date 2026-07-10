@@ -38,10 +38,10 @@
       }
     ];
 
-    shortcuts = {
-      "alacritty.desktop" = {
-        "_launch" = [ "Ctrl+Alt+T" ];
-      };
+    hotkeys.commands."launch-alacritty" = {
+      name = "Launch Alacritty";
+      key = "Ctrl+Alt+T";
+      command = "alacritty";
     };
 
     configFile = {
