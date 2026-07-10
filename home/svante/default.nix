@@ -17,6 +17,8 @@
       opencode
       fastfetch
       vlc
+      prismlauncher
+      neovim
     ];
   };
 

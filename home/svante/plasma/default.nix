@@ -26,6 +26,7 @@
                 "applications:vesktop.desktop"
                 "applications:spotify.desktop"
                 "applications:firefox.desktop"
+                "applications:steam.desktop"
               ];
             };
           }
