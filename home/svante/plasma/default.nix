@@ -38,6 +38,12 @@
       }
     ];
 
+    shortcuts = {
+      "alacritty.desktop" = {
+        "_launch" = [ "Ctrl+Alt+T" ];
+      };
+    };
+
     configFile = {
       "ksmserverrc"."General"."loginMode" = "emptySession";
       "kdeglobals"."General"."TerminalApplication" = "alacritty";
