@@ -7,6 +7,4 @@
 
   # Early GPU init
   boot.initrd.kernelModules = [ "amdgpu" ];
-
-
 }

@@ -11,27 +11,4 @@
   environment.sessionVariables = {
     ELECTRON_FORCE_DARK_MODE = "1";
   };
-
-  home-manager.users.svante.gtk = {
-    enable = true;
-
-    gtk2.force = true;
-
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.kdePackages.breeze-gtk;
-    };
-
-    iconTheme = {
-      name = "breeze-dark";
-      package = pkgs.kdePackages.breeze-icons;
-    };
-
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
 }

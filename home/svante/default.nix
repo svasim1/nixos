@@ -4,7 +4,6 @@
     ./plasma
     ./vesktop
     ./ssh
-    ./spotify
     ./neovim
   ];
 
@@ -14,11 +13,12 @@
     stateVersion = "26.05";
     packages = with pkgs; [
       alacritty
-      vscodium-fhs
       opencode
       fastfetch
-      vlc
       prismlauncher
+      spotify
+      vlc
+      vscodium-fhs
     ];
   };
 
