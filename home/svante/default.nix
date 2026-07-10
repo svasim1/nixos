@@ -5,6 +5,7 @@
     ./vesktop
     ./ssh
     ./spotify
+    ./neovim
   ];
 
   home = {
@@ -18,7 +19,6 @@
       fastfetch
       vlc
       prismlauncher
-      neovim
     ];
   };
 
