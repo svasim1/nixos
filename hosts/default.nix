@@ -22,5 +22,5 @@ let
     };
 in
 {
-  desktop = mkMachine "desktop";
+  "svante-nixos" = mkMachine "desktop";
 }
