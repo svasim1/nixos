@@ -22,6 +22,13 @@
     ];
   };
 
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      rebuild = "sudo nixos-rebuild switch --flake /home/svante/nixos#desktop";
+    };
+  };
+
   xdg.mimeApps.enable = true;
   xdg.configFile."mimeapps.list".force = true;
   xdg.mimeApps.defaultApplications = {
