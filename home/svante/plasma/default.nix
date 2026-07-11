@@ -54,6 +54,11 @@
       "plasma-localerc"."Formats"."TimeFormat" = "HH:mm:ss";
       "powerdevilrc"."AC"."TurnOffDisplayAfterIdleSec" = "1800";
       "powerdevilrc"."AC"."SuspendSessionAfterIdleSec" = "0";
+      "baloofilerc"."Basic Settings"."Indexing-Enabled" = false;
+      "ksplashrc"."KSplash"."Engine" = "none";
+      "kded5rc"."Module-freespacenotifier"."autoload" = false;
+      "krunnerrc"."Plugins"."webshortcutsEnabled" = false;
+      "krunnerrc"."Plugins"."spellcheckEnabled" = false;
     };
   };
 
