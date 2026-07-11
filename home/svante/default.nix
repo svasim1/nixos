@@ -5,6 +5,7 @@
     ./vesktop
     ./ssh
     ./neovim
+    ./zsh
   ];
 
   home = {
@@ -20,13 +21,6 @@
       vlc
       vscodium-fhs
     ];
-  };
-
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake /home/svante/nixos";
-    };
   };
 
   xdg.mimeApps.enable = true;
